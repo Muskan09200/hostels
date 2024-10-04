@@ -1,0 +1,88 @@
+/* src/screens/Records.css */
+
+.records-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hostel-select {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hostel-select label {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.hostel-select select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.records-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table th, table td {
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+table td {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+tr:hover td {
+  background-color: #e1e1e1;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
+
+.no-records {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}

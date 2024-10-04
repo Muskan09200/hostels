@@ -1,0 +1,13 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hostels-service
+spec:
+  selector:
+    app:  hostels
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer  # For cloud-based clusters; use NodePort for Minikube or local

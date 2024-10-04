@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hostels-deployment
+spec:
+  replicas: 3  # Number of desired pods
+  selector:
+    matchLabels:
+      app: hostels
+  template:
+    metadata:
+      labels:
+        app: hostels
+    spec:
+      containers:
+      - name: hostels-container
+        image: muskann0920/hostels:test  # Your Docker image from Docker Hub
+        ports:
+        - containerPort: 3000  # Port your app runs on inside the container
